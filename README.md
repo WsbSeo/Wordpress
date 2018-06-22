@@ -1,2 +1,2 @@
-# Worpdress
-Nowe repozytorium Wordpressa
+# Wordpress
+Nowy Wordpress
