@@ -4,9 +4,8 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style( 'mesmerize', get_template_directory_uri() . '/style.css' );
 
 }
-?>
 
-/* Dodanie kolumny Size do Media Library */
+/* Bartek - Dodanie kolumny Size do Media Library */
 
 add_filter( 'manage_media_columns', 'sk_media_columns_filesize' );
 /**
@@ -50,3 +49,5 @@ function sk_filesize_column_filesize() {
 		}
 	</style>';
 }
+?>
+
