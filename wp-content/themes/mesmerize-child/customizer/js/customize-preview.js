@@ -127,8 +127,8 @@ function liveUpdate(setting, callback) {
             styleHolder.appendTo('head');
         }
 
-
-        position = position + "px" + " " + offset + "px";
+//usunięto px w linii 131 MK//
+        position = position + " " + offset;
 
         styleHolder.text("" +
             "@media screen and (max-width: 767px) {\n" +
