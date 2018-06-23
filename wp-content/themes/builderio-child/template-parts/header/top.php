@@ -83,7 +83,7 @@ $builderio_show_header_trending_post = builderio_get_option( 'builderio_show_hea
 				<?php if( !empty( $builderio_header_facebook_url ) ){ ?>
 					<li class="facebook list-inline-item">
 						<a href="<?php echo esc_url( $builderio_header_facebook_url ); ?>">
-							<i class="fa fa-facebook aria-hidden="true""></i>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
 						</a>
 					</li>
 				<?php } ?>
@@ -91,7 +91,7 @@ $builderio_show_header_trending_post = builderio_get_option( 'builderio_show_hea
 				<?php if( !empty( $builderio_header_twitter_url ) ){ ?>
 					<li class="twitter list-inline-item">
 						<a href="<?php echo esc_url( $builderio_header_twitter_url ); ?>">
-							<i class="fa fa-twitter aria-hidden="true""></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
 						</a>
 					</li>
 				<?php } ?>
@@ -99,7 +99,7 @@ $builderio_show_header_trending_post = builderio_get_option( 'builderio_show_hea
 				<?php if( !empty( $builderio_header_instagram_url ) ){ ?>
 					<li class="instagram list-inline-item">
 						<a href="<?php echo esc_url( $builderio_header_instagram_url ); ?>">
-							<i class="fa fa-instagram aria-hidden="true""></i>
+							<i class="fa fa-instagram" aria-hidden="true"></i>
 						</a>
 					</li>
 				<?php } ?>
