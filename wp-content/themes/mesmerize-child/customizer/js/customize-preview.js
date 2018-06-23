@@ -121,8 +121,8 @@ function liveUpdate(setting, callback) {
             positionParts = position.split(' '),
             offset = wp.customize('header_bg_position_mobile_offset').get(),
             styleHolder = jQuery('[data-name="custom-mobile-image-position"]');
-
-        if (styleHolder.length == 0) {
+//zmieniono z == na === MK//
+        if (styleHolder.length === 0) {
             styleHolder = jQuery('<style data-name="custom-mobile-image-position"></style>');
             styleHolder.appendTo('head');
         }
@@ -144,7 +144,7 @@ function liveUpdate(setting, callback) {
 
     wp.customize('header_bg_position_mobile_offset', function (value) {
         value.bind(updateMobileBgImagePosition);
-    })
+    });
 
     // media frame //
     wp.customize('header_content_frame_offset_left', function (value) {
@@ -154,7 +154,7 @@ function liveUpdate(setting, callback) {
                 'transform': 'translate(' + left + '%,' + top + '%)'
             });
         });
-    });
+    }); //dodano ; MK//
 
 
     wp.customize('header_content_frame_offset_top', function (value) {
@@ -225,9 +225,9 @@ function liveUpdate(setting, callback) {
                var id = 'header_top_bar_'+ area +'_info_field_' +  index + '_icon';
                $("[data-focus-control="+id+"]").find('span').html(html);
             });
-        }
+        }; //dodano ; MK//
     }
-
+    
     var areas = ['area-left', 'area-right'];
     for (var i = 0; i < areas.length; i++) {
         for (var j = 0; j < 3; j++) {
