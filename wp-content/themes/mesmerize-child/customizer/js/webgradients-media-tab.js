@@ -8,11 +8,11 @@
             return new RegExp("^" + str.replace(/./g, function (x) {
                 return /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/.test(x) ? "\\" + x + "?" : x + "?";
             }) + "$");
-        })
+        }); //; MK//
         return function (str, pattern) {
-            return cache(str).test(pattern)
-        }
-    })()
+            return cache(str).test(pattern); //; MK//
+        }; // ; MK//
+    })(); // ; MK//
 
     var cpWebGradientsOptions = {};
 
@@ -72,7 +72,7 @@
         template: iconTemplate,
         controller: this.controller,
         initialize: function () {
-            this.render()
+            this.render(); // ; MK//
         },
 
         attributes: function () {
@@ -80,8 +80,8 @@
                 'data-search': this.model.get('gradient').trim(),
                 'aria-label': this.model.get('title'),
                 'title': this.model.get('title'),
-                'tabIndex': 0,
-            }
+                'tabIndex': 0 // usunięto , MK//
+            }; // ; MK//
         },
         events: {
             "click .js--select-attachment": "toggleSelectionHandler"
@@ -92,7 +92,7 @@
             this.$el.html(this.template({
                 'webgradient': icon,
                 'title': title
-            }))
+            })); // ; MK //
         },
 
         toggleSelectionHandler: function (event) {
@@ -122,7 +122,7 @@
                 method: 'add'
             });
 
-            $('.media-selection.one .attachment-preview.type-fa-icon .thumbnail').html('<div class="webgradient ' + this.model.get('gredient') + '"></div>')
+            $('.media-selection.one .attachment-preview.type-fa-icon .thumbnail').html('<div class="webgradient ' + this.model.get('gredient') + '"></div>'); // ; MK//
 
             this.controller.trigger('selection:toggle');
         }
@@ -158,8 +158,8 @@
                     selection: iconsView.options.selection,
                     model: icon
                 });
-                iconsView.views.add(iconView)
-            })
+                iconsView.views.add(iconView); // ; MK//
+            }); // MK//
         },
 
         scroll: function () {
@@ -235,7 +235,7 @@
                     selection: selection,
                     collection: icons
                 });
-                browserVIew.views.add(iconsView)
+                browserVIew.views.add(iconsView); // ; MK//
             }
 
 
@@ -263,7 +263,7 @@
         createToolbar: function () {
             this.toolbar = new wp.media.view.Toolbar({
                 controller: this.controller
-            })
+            }); // ; MK//
             this.views.add(this.toolbar);
             this.toolbar.set("search", new cpFontAwesomeSearch({
                 controller: this.controller,
@@ -309,7 +309,7 @@
                 });
             }
 
-        }
+        }; // ; MK//
 
         return wpMediaFrame.extend(cpWebGratientsFrameExtension);
     }
@@ -318,7 +318,7 @@
     if (!wp.media.cp.extendFrameWithWebGradients) {
         wp.media.cp.extendFrameWithWebGradients = function(options) {
             cpWebGradientsOptions = options;
-            return extendFrameWithcpWebGratients 
+            return extendFrameWithcpWebGratients; // ; MK// 
         };
     }
 })(jQuery);
