@@ -5,7 +5,7 @@ function my_theme_enqueue_styles() {
 
 }
 
-/* Bartek - Dodanie kolumny Size do Media Library */
+/* Bartek - Dodanie kolumny Size do Media Library - sprawdzone: działa */
 
 add_filter( 'manage_media_columns', 'sk_media_columns_filesize' );
 /**
