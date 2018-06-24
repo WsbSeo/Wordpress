@@ -5540,3 +5540,13 @@ section {
     margin: 0 auto;
     text-align: center;
 }
+            /*Ukrycie Slidera w wersji responsywnej*/
+@media screen and ( max-width: 1023px ) {
+        .owl-stage-outer, article.page, .builderio-banner-slider-wrapper  {
+            display: none !important;
+        }  
+        #text-7 {
+padding-top: 5px;
+padding-bottom: 5px;
+        }
+}
