@@ -56,7 +56,7 @@ $post_img = get_template_directory_uri() . '/assets/images/post-thumbnail.png';
                                 <?php endif; ?>
                                 <p class="read-more animation animated-item-3">
                                     <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn">
-                                        <?php esc_html_e( 'Read More','builderio' );?>
+                                        <?php esc_html_e( 'Więcej o firmie BudSerwis','builderio' );?>
                                     </a>
                                 </p>
                                 
