@@ -5541,12 +5541,25 @@ section {
     text-align: center;
 }
             /*Ukrycie Slidera w wersji responsywnej*/
-@media screen and ( max-width: 1023px ) {
-        .owl-stage-outer, article.page, .builderio-banner-slider-wrapper  {
-            display: none !important;
-        }  
-        #text-7 {
-padding-top: 5px;
-padding-bottom: 5px;
-        }
-}
+           
+            @media screen and ( max-width: 1023px){
+
+                .site-content {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+
+                .owl-stage-outer, .builderio-banner-slider-wrapper  {
+                    display: none !important;
+                }  
+                #text-7 {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+            @media screen and ( min-width: 1024px){
+                #attachment_748 {
+                    display: none !important;
+                }
+            }
+            
